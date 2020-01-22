@@ -18,6 +18,7 @@
       "default_ter": "t_shrub",
       "other": {
         "t_cactus": 12.3333,
+		"t_tree_palm": 10.3333,
         "t_tree_young": 0.2,
         "t_tree": 0.1,
         "t_tree_birch": 0.05,
@@ -71,6 +72,7 @@
       "boosted_other": {
         "t_tree_young": 0.2,
         "t_tree": 0.1,
+		"t_tree_palm": 0.1,
         "t_tree_birch": 0.05,
         "t_tree_elm": 0.05,
         "t_tree_cottonwood": 0.05,
@@ -147,6 +149,7 @@
             "types": {
               "t_tree_young": 128,
               "t_tree": 32,
+			  "t_tree_palm": 32,
               "t_tree_birch": 16,
               "t_tree_elm": 16,
               "t_tree_cottonwood": 16,

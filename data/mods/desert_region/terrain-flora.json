@@ -1,0 +1,44 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_cactus",
+    "name": "cactus",
+    "description": "A tall cactus.",
+    "symbol": "#",
+    "color": "green",
+    "move_cost": 8,
+    "coverage": 40,
+    "looks_like": "f_mutcactus_test",
+    "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE_ASH", "THIN_OBSTACLE", "PLACE_ITEM", "SHARP" ],
+    "examine_action": "harvest_ter_nectar",
+    "harvest_by_season": [ { "seasons": [ "spring" ], "entries": [ { "drop": "cholla_bud", "base_num": [ 2, 5 ] } ] } ],
+    "bash": {
+      "str_min": 4,
+      "str_max": 30,
+      "sound": "crunch.",
+      "sound_fail": "brush.",
+      "ter_set": "t_sand",
+      "items": [ { "item": "withered", "prob": 50, "count": [ 1, 2 ] } ]
+    }
+	
+	{
+    "type": "terrain",
+    "id": "t_tree_palm",
+    "name": "palm tree",
+    "description": "A tall tropical tropical tree of the 'Areca' genus. The palm tree is known for its sweeping palm fronds. This one bears no fruit.",
+    "symbol": "#",
+    "color": [ "green", "green", "green", "green" ],
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ],    
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_sand",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+	  }
+    }
+  }
+]
